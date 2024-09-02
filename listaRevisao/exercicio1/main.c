@@ -9,6 +9,6 @@ int main()
             soma += i;
         }
     }
-    printf("%d\n", soma);
+    printf("A soma dos numeros impares que sao multiplos de 5 e que se encontram no intervalo de 1 ate 1000 eh %d\n", soma);
     return 0;
 }

@@ -4,10 +4,12 @@
 int main()
 {
     int valor, i=1, soma=0, qtdValores=0, qtdPos=0, qtdNeg=0;
-    float media, perPos, perNeg;
+    double media, perPos, perNeg;
+
+    printf("Digite numero nao determinado de valores. Digite 0 parar parar. \n");
 
     while(i!=0){
-        printf("Digite um valor qualquer:");
+        printf("Valor:");
         scanf("%d", &valor);
 
         if(valor ==0){
@@ -25,15 +27,15 @@ int main()
     }
     qtdValores = i-1;
 
-    media = soma / qtdValores;
-    perPos = ((float)qtdPos / (float)qtdValores) * 100;
-    perNeg = ((float)qtdNeg / (float)qtdValores) * 100;
+    media = (double)soma / qtdValores;
+    perPos = ((double)qtdPos / (double)qtdValores) * 100;
+    perNeg = ((double)qtdNeg / (double)qtdValores) * 100;
 
-    printf("A média é %f \n", media);
-    printf("A quantidade de positivos é %d \n", qtdPos);
-    printf("A quantidade de negativos é %d \n", qtdNeg);
-    printf("O percentual de positivos é %.2f%% \n", perPos);
-    printf("O percentual de negativos é %.2f%% \n", perNeg);
+    printf("A media geral eh %.2lf \n", media);
+    printf("A quantidade de positivos eh %d \n", qtdPos);
+    printf("A quantidade de negativos eh %d \n", qtdNeg);
+    printf("O percentual de positivos eh %.2lf%% \n", perPos);
+    printf("O percentual de negativos eh %.2lf%% \n", perNeg);
 
     return 0;
 }
