@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1725578588 source:c:\exerciciosed\vetor\exercicios\exercicio2\main.c
+	<stdio.h>
+	<stdlib.h>
+

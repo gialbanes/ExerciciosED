@@ -1,27 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void separacao(int numPares[], int numImpares[], int n[]){
-    for(int i=0; i<15; i++){
-        if(n[i]%2==0){
-            numPares[]++;
-        } else if (n[i]%2!=0){
-            numImpares[]++;
-        }
-    }
-}
-int main()
-{
-    int n[15], i, numPares[], numImpares[];
 
-    for(i=0; i<15; i++){
-        printf("Digite os elementos do vetor. Devem ser positivos.");
+int main(){
+
+    int  n[15], nPar[15], nImpar[15];
+
+    for (int i = 0; i<15; i++){
+        printf("Digite um numero positivo: ");
         scanf("%d", &n[i]);
     }
 
-    separacao(numPares, numImpares);
-
-    printf("%d\n", numPares);
-    printf("%d\n", numImpares);
-    return 0;
+    for (int i = 0; i<15; i++) {
+        if (n[i] % 2 == 0){
+            nPar[i]++;
+        }
+        else{
+            nPar[i]++;
+        }
+    }
+    for(int i=0; i<nPar; i++){
+        printf("%d\n", nPar[i]);
+    }
 }
+
