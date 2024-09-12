@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1726147493 source:c:\exerciciosed\material_de_apoio\matriz\exercicio1\main.c
+	<stdio.h>
+	<stdlib.h>
+
