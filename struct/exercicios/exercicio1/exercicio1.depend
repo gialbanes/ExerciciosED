@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1727399075 source:c:\exerciciosed\struct\exercicios\exercicio1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
