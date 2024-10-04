@@ -16,6 +16,8 @@ int main()
     struct Livro livros[5];
     int paginasTotais = 0;
     for(int i=0; i<5; i++){
+        // pegue o buffer do teclado e limpe, se exitir algum valor ainda armazenado lá, ele limpa e está pronto pra receber novos dados, usamos aqui pq a linguagem C tem dificuldade em ler uma string e logo em seguida outro tipo
+        fflush(stdin);
         printf("Digite o título do livro:\n");
         scanf("%s", livros[i].titulo);
 
@@ -30,8 +32,8 @@ int main()
         scanf("%f", &livros[i].preco);
     }
 
-    int tam = sizeof(livros)/sizeof(struct Livro);
-    float media = paginasTotais/tam;
+    //apesar das variáveis serem interas, forçamos para que o programa entenda elas como float
+    float media = (float)paginasTotais/5;
 
     printf("\n\n\n");
     printf("LIVROS\n");

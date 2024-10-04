@@ -13,9 +13,9 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    struct Habitante h[3];
+    struct Habitante h[500];
     float salarioTotal=0;
-    for(int i=0; i<3; i++){
+    for(int i=0; i<500; i++){
         printf("Digite a idade do habitante:");
         scanf("%d", &h[i].idade);
 
@@ -32,11 +32,11 @@ int main()
         printf("\n\n");
     }
 
-    float media = salarioTotal/3;
+    float media = (float)salarioTotal/500;
 
     printf("\n\n");
     printf("RESULTADOS DA PESQUISA\n");
-    for(int i=0; i<3; i++){
+    for(int i=0; i<500; i++){
         printf("Idade: %d\n", h[i].idade);
         printf("Sexo: %s\n", h[i].sexo);
         printf("Salário: %.2f\n", h[i].salario);
